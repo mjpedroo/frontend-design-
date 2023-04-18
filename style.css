@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: navy;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 7em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ham {
+    display: none;
+}
+.logo {
+    width: 300px;
+    display: flex;
+    gap: 30px;
+}
+.logo ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+a {
+    text-decoration: none;
+}
+.start {
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: fit-content;
+}
+main {
+    padding: 0em 7em;
+}
+.intro {
+    display: flex;
+    align-items: center;
+    height: 110vh;
+    margin-right: -7em;
+}
+.right img {
+    width: 80%;
+    margin-top: 25vh;
+}
+.intro .left {
+    width: 50vw;
+}
+.intro .right {
+    width: 50vw;
+}
+.intro h1 {
+    font-size: 3.5em;
+    width: 80%;
+}
+.intro p {
+    width: 25em;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.demo {
+    text-align: center;
+    width: 200px;
+    padding: 10px 0;
+    transition: ease 400ms;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.demo:hover {
+    background-color: navy;
+    color: white;
+}
+.intro .right {
+    background-color: aqua;
+    height: 100%;
+    padding-left: 20px;
+}
+.learn {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-top: 20px;
+}
+.learn img {
+    width: 30px;
+    margin-right: 10px;
+}
+.learn a {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.people {
+    display: flex;
+}
+.people img {
+    width: 50px;
+}
+.people-left, .people-right {
+    width: 50vw;
+    padding-top: 20px;
+}
+.people-left h1 {
+    width: 80%;
+}
+.people-right {
+    margin-left: 7em;
+}
+.people-right p {
+    margin-bottom: 30px;
+    width: 80%;
+}
+.dashboard {
+    background-color: aqua;
+    margin-left: -7em;
+    margin-right: -7em;
+    padding: 1em 7em;
+    display: flex;
+    justify-content: space-between;
+}
+.dash-left, .dash-right {
+    width: 37vw;
+}
+footer {
+    padding: 1em 7em;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+footer ul {
+    list-style: none;
+}
+footer input {
+    height: 40px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+footer button {
+    border: none;
+}
+footer form {
+    border: 2px solid navy;
+    border-radius: 5px;
+    padding: 1px;
+}
+@media screen and (max-width: 768px) {
+    .logo ul {
+        display: none;
+    }
+    header, main {
+        padding: 1em 2em;
+    }
+    header .start {
+        display: none;
+    }
+    .ham {
+        display: flex;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+        margin-right: 0em;
+        margin-left: 0em;
+    }
+    .intro h1 {
+        width: 80vw;
+        margin-left: -2em;
+    }
+    .intro p {
+        margin-left: -6em;
+        width: 85vw;
+        text-align: justify;
+        font-size: 1.1em;
+    }
+    .btns {
+        justify-content: space-between;
+        width: 80vw;
+        margin-left: -6em;
+    }
+    .start, .demo {
+        width: 100%;
+    }
+    .intro .left img {
+        margin-left: -6em;
+    }
+    .learn p {
+        margin-left: 0;
+    }
+    
+}
